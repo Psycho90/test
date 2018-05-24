@@ -38,23 +38,6 @@ gulp.task('grid', function(){
     smartgrid(config.root + config.smartgrid.dest, options);
 });
 
-// gulp.task('slick-css', function () {
-//     return gulp.src('./node_modules/slick-carousel/slick/slick.css')
-//         .pipe(gulp.dest('./build/css'));
-// })
-//
-// gulp.task('slick-js', function () {
-//     return gulp.src('./node_modules/slick-carousel/slick/slick.min.js')
-//         .pipe(gulp.dest('./build/js'));
-// })
-//
-// gulp.task('slick', gulp.series('slick-css', 'slick-js'))
-//
-// gulp.task('jquery', function () {
-//     return gulp.src('./node_modules/jquery/dist/jquery.min.js')
-//         .pipe(gulp.dest('./build/js'));
-// })
-
 gulp.task('watch', function () {
     gulp.watch('./src/precss/*.less', gulp.series('css'))
 })
