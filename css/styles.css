@@ -125,8 +125,8 @@ body {
 }
 
 .header {
-  background: url("/img/bg.png"), -webkit-gradient(linear, left top, right bottom, from(#008aff), to(#1ad2fd));
-  background: url("/img/bg.png"), linear-gradient(to bottom right, #008aff, #1ad2fd);
+  background: url("img/bg.png"), -webkit-gradient(linear, left top, right bottom, from(#008aff), to(#1ad2fd));
+  background: url("img/bg.png"), linear-gradient(to bottom right, #008aff, #1ad2fd);
   color: #fff;
 }
 
