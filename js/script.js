@@ -56,12 +56,12 @@ function slider_classes() {
     $dots.eq(i + 2).addClass("slider-dot--cntr");
     $slide.eq(i + 3).addClass("screen-slide--close").removeClass("screen-slide--invis");
     $slide.eq(i + 4).addClass("screen-slide--far").removeClass("screen-slide--invis");
-    $slider.css({left: '', right: '' });
+    $slider.css({left: '', right: ''});
     if ($slide.eq(1).hasClass("screen-slide--cntr")) {
         $slider.css('left', '230px');
     }
     if ($slide.eq(0).hasClass("screen-slide--cntr")) {
-            $slider.css('left', '460px');
+        $slider.css('left', '460px');
     }
     if ($slide.eq($slide.length - 1).hasClass("screen-slide--cntr")) {
         $slider.css('right', '230px');
@@ -137,3 +137,40 @@ $('.user-slider').slick({
     prevArrow: $('.user-left'),
     nextArrow: $('.user-right')
 });
+
+//FAQ
+
+$(function () {
+    var icons = {
+        header: "acc-closed",
+        activeHeader: "acc-opened"
+    };
+    $(".faq__item").accordion({
+        icons: icons,
+        collapsible: true,
+        active: false,
+        autoHeight: false
+    });
+})
+;
+
+//BUTTON UP
+
+$(".btn-up").click(function () {
+    $('html, body').animate({
+        scrollTop: $(".header").offset().top
+    }, 2000);
+});
+
+$(window).scroll(function () {
+    if ($(window).scrollTop() > 1000) {
+        $(".btn-up").fadeIn("slow");
+    }
+    else {
+        $(".btn-up").fadeOut("slow");
+    }
+});
+
+
+
+
