@@ -3,6 +3,9 @@ module.exports = {
         maxWidth: "1170px"
     },
     breakPoints: {
+        xlg:{
+            width: "1500px"
+        },
         lg: {
             width: "1200px"
         },
